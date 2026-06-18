@@ -1,43 +1,32 @@
 function Hero() {
-    return (
-      <section
-        style={{
-          height: "80vh",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center"
-        }}
-      >
-        <h1 style={{ fontSize: "3rem" }}>
-          Hrishikesh Talukdar
+  return (
+    <section className="hero">
+
+      <div className="hero-content">
+
+        <h1>
+          Hi, I'm Hrishikesh Talukdar
         </h1>
-  
-        <h3>
-          System Engineer | DevOps Engineer
-        </h3>
-  
+
+        <h2>
+          MERN Stack Developer &
+          DevOps Engineer
+        </h2>
+
         <p>
-          Building scalable applications and cloud infrastructure.
+          Building scalable web applications,
+          cloud infrastructure and CI/CD pipelines.
         </p>
-  
-        <div
-          style={{
-            display: "flex",
-            gap: "15px",
-            marginTop: "20px"
-          }}
-        >
-          {/* <button>
-            View Projects
-          </button> */}
-  
-          {/* <button>
-            Contact Me
-          </button> */}
+
+        <div className="hero-buttons">
+          <button>View Projects</button>
+          <button>Download Resume</button>
         </div>
-      </section>
-    );
-  }
-  
-  export default Hero;
+
+      </div>
+
+    </section>
+  );
+}
+
+export default Hero;
